@@ -39,12 +39,23 @@ body{
     margin: auto;
 }
 
-.secion{
-    justify-content: center;
-    justify-items: auto;
+.clearfix{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-/* .imagem-perfil{
-    border-radius: 20px;
-} */
+.profile-pic{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    /* Distribui de forma uniforme a imagem dentro da borda definida */
+    object-fit: cover;
+    margin-right: 20px;
+}
 
