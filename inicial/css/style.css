@@ -1,17 +1,19 @@
-*{
+@import url(variable.css);
+
+*, *::before, ::after{
     padding: 0;
     margin: 0;
 }
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--body-color);
     color: black;
 }
 
 
 .site-header, .site-footer{
-    background-color: rgb(20, 146, 140);
+    background-color: var(--primary-color);
     color: white;
     padding: 15px 0;
     margin: 0%;
@@ -37,6 +39,7 @@ body{
     max-width: 1200px;
     height: 0 20px;
     margin: auto;
+    animation: FadeIn2 0.0002s ease-in-out;/* infinite; - Utilizar só no profile pic, professor não aprova essa parte de transição (delay pra carregar)*/
 }
 
 .clearfix{
@@ -50,13 +53,14 @@ body{
 }
 
 .profile-pic{
-    float: left;
+    float: none;
+    display: block;
     width: 150px;
     height: 150px;
     border-radius: 60%;
     /* Distribui de forma uniforme a imagem dentro da borda definida */
     object-fit: cover;
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
 .projects-grid ul{
@@ -76,13 +80,45 @@ body{
     padding: 10px;
 }
 
+.section{
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-pic{
+
+    }
+    .section{
+        text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes FadeIn2{
+
+    0%{background-color: red;}
+    50%{background-color: blue;}
+    100%{background-color: green;}
+}
+
 /* .project-item{
     background-color: white;
     box-shadow: 0 0 10px black;
     border-radius: 5px;
 
-}
+    transiction: box-shadow: (0.3s ou var(--transition-speed));
 
+}
+.project-item ::hover {
+    box-shadown: 0 0 15px #red;
+
+}
 .project-img {
 width: 100%;
 height: 200px;
@@ -91,5 +127,3 @@ border-bottom: 3px solid black;
 
 }
     */
-
-
