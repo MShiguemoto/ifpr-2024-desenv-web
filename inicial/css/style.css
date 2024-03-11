@@ -2,6 +2,7 @@
 
 *, *::before, ::after{
     padding: 0;
+    /*background-color: var(--background-color);*/
     margin: 0;
 }
 
@@ -13,7 +14,7 @@ body{
 
 
 .site-header, .site-footer{
-    background-color: var(--primary-color);
+    background-color: var(--blueStone-color);
     color: white;
     padding: 15px 0;
     margin: 0%;
@@ -21,9 +22,12 @@ body{
 }
 
 .main-navigation ul {
-    display: flex;
+    /* display: flex; */
+    float: inline-start;
     justify-content: center;
     list-style-type: none;
+    margin: 10;
+    
 }
 .main-navigation a{
     color: white;
@@ -32,28 +36,41 @@ body{
 }
 
 .main-navigation li{
-    padding: 0 15px;
+    padding: 10px;
     font-size: 20px;
+
 }
+
+.body{
+    background-color: antiquewhite;
+}
+
 .container{
-    max-width: 1200px;
-    height: 0 20px;
-    margin: auto;
-    animation: FadeIn2 0.0002s ease-in-out;/* infinite; - Utilizar só no profile pic, professor não aprova essa parte de transição (delay pra carregar)*/
+    max-width: 200px;
+    background-color: var(--blueStone-color);
+    height: auto;
+    margin: 0;
+    /* animation: FadeIn2 0.0002s ease-in-out;                    --infinite; - Utilizar só no profile pic, professor não aprova essa parte de transição (delay pra carregar) */
 }
 
 .clearfix{
     margin-top: 5px;
     margin-bottom: 5px;
+    border:  3px solid;
+    float: left;
+    width: 200px auto;
+    /* display: flexbox;
+    flex-direction: column; */
 }
 .clearfix::after{
     content: "";
     clear: both;
-    display: table;
+    flex-direction: column;
+    
 }
 
 .profile-pic{
-    float: none;
+    float: left;
     display: block;
     width: 150px;
     height: 150px;
@@ -65,6 +82,7 @@ body{
 
 .projects-grid ul{
     display: flex;
+    position: relative;
 }
 .projects-grid li{
     background-color: white;
@@ -80,15 +98,19 @@ body{
     padding: 10px;
 }
 
+.ordenacao {
+    /* display: flex; */
+    display: inline;
+}
 .section{
     padding: 50px 0;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
     .profile-pic{
-
+            display: initial;
     }
     .section{
         text-align: center;
@@ -107,6 +129,11 @@ body{
     100%{background-color: green;}
 }
 
+.menuLateral {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 /* .project-item{
     background-color: white;
     box-shadow: 0 0 10px black;

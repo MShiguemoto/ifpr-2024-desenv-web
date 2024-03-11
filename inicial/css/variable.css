@@ -1,5 +1,7 @@
 :root {
-    --primary-color: rgb(20, 146, 140);
-    --body-color: rgb(221, 221, 221);
+    --cyan-color: rgb(0, 223, 252);
+    --blueStone-color: rgb(0, 95, 107);
+    --background-color: rgb(0, 140, 158);
+    --cinza-color: rgb(52, 56, 56);
     --transition-speed: 0.3s;
 }
