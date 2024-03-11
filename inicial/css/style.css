@@ -8,22 +8,24 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--body-color);
-    color: black;
+    background-color: var(--cinza-background-color);
+    color: whitesmoke;
 }
 
 
 .site-header, .site-footer{
-    background-color: var(--blueStone-color);
+    background-color: var(--cinzaescuro-color);
     color: white;
     padding: 15px 0;
     margin: 0%;
 
 }
 
+.main-navigation{
+    display: block;
+}
 .main-navigation ul {
-    /* display: flex; */
-    float: inline-start;
+    display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 10;
@@ -32,7 +34,6 @@ body{
 .main-navigation a{
     color: white;
     text-decoration: none;
-
 }
 
 .main-navigation li{
@@ -42,12 +43,12 @@ body{
 }
 
 .body{
-    background-color: antiquewhite;
+    background-color: var(--cinza-background-color);
 }
 
 .container{
     max-width: 200px;
-    background-color: var(--blueStone-color);
+    background-color: var(--cinzaescuro-color);
     height: auto;
     margin: 0;
     /* animation: FadeIn2 0.0002s ease-in-out;                    --infinite; - Utilizar só no profile pic, professor não aprova essa parte de transição (delay pra carregar) */
@@ -72,6 +73,7 @@ body{
 .profile-pic{
     float: left;
     display: block;
+    box-sizing: border-box;
     width: 150px;
     height: 150px;
     border-radius: 60%;
@@ -82,7 +84,8 @@ body{
 
 .projects-grid ul{
     display: flex;
-    position: relative;
+    /* position: relative; */
+    
 }
 .projects-grid li{
     background-color: white;
@@ -129,11 +132,11 @@ body{
     100%{background-color: green;}
 }
 
-.menuLateral {
+/* .menuLateral {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: row;
+} */
 /* .project-item{
     background-color: white;
     box-shadow: 0 0 10px black;
