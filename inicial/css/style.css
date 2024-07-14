@@ -1,159 +1,51 @@
-@import url(variable.css);
-
-*, *::before, ::after{
-    padding: 0;
-    /*background-color: var(--background-color);*/
+body {
+    font-family: sans-serif;
+    background-color: #222; /* Cor de fundo escura */
+    color: #eee; /* Cor do texto clara */
     margin: 0;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--cinza-background-color);
-    color: whitesmoke;
+.container {
+    display: flex; /* Layout flexível para organizar o conteúdo */
 }
 
-
-.site-header, .site-footer{
-    background-color: var(--cinzaescuro-color);
-    color: white;
-    padding: 15px 0;
-    margin: 0%;
-
+nav {
+    width: 200px; /* Largura da barra lateral */
+    background-color: #333; /* Cor de fundo da barra lateral */
+    padding: 20px;
 }
 
-.main-navigation{
-    display: block;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
-.main-navigation ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 10;
-    
+
+nav li {
+    margin-bottom: 10px;
 }
-.main-navigation a{
-    color: white;
+
+nav a {
+    color: #eee;
     text-decoration: none;
 }
 
-.main-navigation li{
-    padding: 10px;
-    font-size: 20px;
-
+main {
+    flex: 1; /* Ocupa o espaço restante */
+    padding: 20px;
 }
 
-.body{
-    background-color: var(--cinza-background-color);
-}
-
-.container{
-    max-width: 200px;
-    background-color: var(--cinzaescuro-color);
-    height: auto;
-    margin: 0;
-    /* animation: FadeIn2 0.0002s ease-in-out;                    --infinite; - Utilizar só no profile pic, professor não aprova essa parte de transição (delay pra carregar) */
-}
-
-.clearfix{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border:  3px solid;
-    float: left;
-    width: 200px auto;
-    /* display: flexbox;
-    flex-direction: column; */
-}
-.clearfix::after{
-    content: "";
-    clear: both;
-    flex-direction: column;
-    
+h2 {
+    color: #fff; /* Cor dos títulos */
 }
 
 .profile-pic{
-    float: left;
-    display: block;
-    box-sizing: border-box;
     width: 150px;
     height: 150px;
     border-radius: 60%;
     /* Distribui de forma uniforme a imagem dentro da borda definida */
     object-fit: cover;
     margin: 0 auto;
-}
-
-.projects-grid ul{
-    display: flex;
-    /* position: relative; */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
     
 }
-.projects-grid li{
-    background-color: white;
-    border: solid black 2px;
-    padding: 0 25px;
-    font-size: 20px;
-    border-radius: 10px;
-    margin-left: auto;
-    box-shadow: 0 0 10px #333;
-}
-
-.project-info {
-    padding: 10px;
-}
-
-.ordenacao {
-    /* display: flex; */
-    display: inline;
-}
-.section{
-    padding: 50px 0;
-    text-align: center;
-    animation: fadeIn 3s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-    .profile-pic{
-            display: initial;
-    }
-    .section{
-        text-align: center;
-    }
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to{opacity: 1;}
-}
-
-@keyframes FadeIn2{
-
-    0%{background-color: red;}
-    50%{background-color: blue;}
-    100%{background-color: green;}
-}
-
-/* .menuLateral {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-} */
-/* .project-item{
-    background-color: white;
-    box-shadow: 0 0 10px black;
-    border-radius: 5px;
-
-    transiction: box-shadow: (0.3s ou var(--transition-speed));
-
-}
-.project-item ::hover {
-    box-shadown: 0 0 15px #red;
-
-}
-.project-img {
-width: 100%;
-height: 200px;
-object-fit: contain;
-border-bottom: 3px solid black;
-
-}
-    */
+/* Estilos adicionais para seções, links, etc. */
