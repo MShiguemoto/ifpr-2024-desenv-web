@@ -1,93 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-    <div class="title">
-        <title>Mauricio R. Shiguemoto</title>
-    </div>
     <meta charset="UTF-8">
-    <meta name="vierport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portiflio de Mauricio Rodrigues Shiguemoto, um desenvolvedor">
-    <meta name = "keywords" content = "desenvolvedor, portfólio web, projetos web, front, html, css">
-    
-
-
-    <link href="css/style.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "desenvolvedor, .NET, AWS, cloud, projeots web, portifólio">
+    <title>Currículo - Mauricio Shiguemoto</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-
-<body class="body">
-
-    <header class="site-header">
-        <!-- <h1>Criação do meu primeiro html para a criação do portifólio</h1> -->
-        <div class="menuLateral">
-            <!-- <div class="aaaa", role="navigation">testeararasrasrasrasrasdDASFASDASDASDADASLÇFMIKSHGIAHJIFUGHAUHDFIAJSDFIASJ -->
-                <nav class="main-navigation">
-                    <ul>
-                        <li> <a href="#sobre-mim">Sobre Mim</a></li>
-                        <li> <a href="#projetos">Projetos</a></li>
-                        <li> <a href="#formacao">Formação</a></li>
-                        <li> <a href="#contatos">Contatos</a></li>
-                   </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="ordenacao">
-            <section class="clearfix">
+<body>
+    <div class="container">
+        <nav>
+            <ul>
                 <img src="imagens/perfil.jpg" class="profile-pic" alt="Minha foto" />
-                <h2>Sobre mim</h2>
-                <p>Olá, eu sou o Shig...</p>
-             <!-- <nav class="main-navigation">
-                    <ul>
-                         <li> <a href="#sobre-mim">Sobre Mim</a></li>
-                         <li> <a href="#projetos">Projetos</a></li>
-                        <li> <a href="#formacao">Formação</a></li>
-                        <li> <a href="#contatos">Contatos</a></li>
-                   </ul>
-                </nav> -->
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Me chamo Mauricio Rodrigues Shiguemoto, estou cursando o 3° ano de engenharia de software no Instituto Federal do Paraná (IFPR-Paranavaí), sou desenvolvedor de software júnior C# e participo de um projeto de extensão, chamado PROCINT - Projeto Cidades Inteligentes, de Ariquemes - RO, atuo no eixo de segurança e trabalho com o processamento de imagens digitais e visão computacional.
+                    Tenho experiência na linguagem C#, me recordo da sintaxe de Java, C/C++ e um pouco de Python. Também estou cursando uma matéria com DART e outra com JavaScript (e afins). 
+                    Sobre ferramentas e frameworks: o versionamento de código está em GitHub e Azure, Cloud está com AWS EC2, RDS, S3 e leituras sobre SQS, SNS e mais algumas, de bando de dados (SGBD) MySQL e PostGress são bem parecidos. Sinceramente, eu já me perdi nos frameworks pois sempre que me deparo com algum problema, eu encontro algum framework e assim vou avançando com o meu desenvolvimento pessoal. 
+                    É bem possível que este texto e perfil estejam desatualizados, gosto muito de continuar me aprimorando, afirmar qualidades próprias e meu conhecimento, é uma coisa que ainda tenho dificuldade. Eu prefiro ver o lado vazio do copo e aceitar de que sempre há espaço para algo mais conhecimento.</p>
             </section>
-
-           <section>
-               <div class="projects-grid">
-                <h2>Projetos desenvolvidos</h2>
-
+            <section id="projetos">
+                <h2>Projetos</h2>
                 <!-- Professor utilizou a tag Article
     Que necessita estar completa em seu conteúdo e deve fazer sentido por si só
 <article class="project-grid"> -->
-
-
-                 <ul>
-                     <li>
-                         <img src="imagens/projeto.webp" alt="Foto do Projeto" />
-                         <div class="project-info">
-                             <h3>Projeto Comercial</h3>
-                             <p>Descrição do Projeto</p>
-                         </div>
-                     </li>
-                     <li>
-                         <img src="imagens/projeto.webp" alt="Foto do Projeto" />
-                         <div class="project-info">
-                             <h3>Projeto Comercial</h3>
-                             <p>Descrição do Projeto</p>
-                         </div>
-                     </li>
-                     <li>
-                         <img src="imagens/projeto.webp" alt="Foto do Projeto" />
-                         <div class="project-info">
-                             <h3>Projeto Comercial</h3>
-                             <p>Descrição do Projeto</p>
-                         </div>
-                     </li>
-                 </ul>
-             </div>
+                <ul>
+                    <li>
+                        <img src="imagens/projeto.webp" alt="Foto do Projeto" />
+                        <div class="project-info">
+                            <h3>Projeto Comercial</h3>
+                            <p>Descrição do Projeto</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
-        </div>
-    </main>
-
+            <section id="formacao">
+                <h2>Formação</h2>
+                <ul>
+                    <li>[Liste sua formação acadêmica e cursos relevantes.]</li>
+                </ul>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <ul>
+                    <li>Email: shiguemoto.m@gmail.com</li>
+                    <!--<li>Telefone: [Seu telefone]</li>-->
+                    <li>LinkedIn: www.linkedin.com/in/MauricioShiguemoto</li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer class="site-footer">
 
         <div>
@@ -96,6 +65,4 @@
 
     </footer>
 </body>
-
-
 </html>
